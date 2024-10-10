@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import styled from 'styled-components';
 
 const FooterWrapper = styled.footer`
@@ -37,16 +38,16 @@ export default function Footer() {
     return (
         <FooterWrapper>
             <FooterLinks>
-                <a href="/">Home</a>
-                <a href="https://maps.app.goo.gl/vduSssxaDLvEJvnn6">About Us</a>
-                <a href="https://wa.me/9987497767" target="_blank" rel="noopener noreferrer">
+                <Link href="/">Home</Link>
+                <Link href="https://maps.app.goo.gl/vduSssxaDLvEJvnn6">About Us</Link>
+                <Link href="https://wa.me/9987497767" target="_blank" rel="noopener noreferrer">
                     Contact Us
-                </a>
-                <a href="https://www.lclark.edu/offices/communications/order-and-download/stationery-faq/">FAQs</a>
-                <a href="/">Privacy Policy</a>
+                </Link>
+                <Link href="https://www.lclark.edu/offices/communications/order-and-download/stationery-faq/">FAQs</Link>
+                <Link href="/">Privacy Policy</Link>
             </FooterLinks>
 
-            <Copyright>&copy; {new Date().getFullYear()} Nisha Stationery<br/>
+            <Copyright>&copy; {new Date().getFullYear()} Nisha Stationery<br />
                 All Rights Reserved</Copyright>
         </FooterWrapper>
     );

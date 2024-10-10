@@ -37,7 +37,7 @@ export default function SearchPage() {
 
     return (
         <SearchWrapper>
-            <Title>Search Results for "{searchQuery}"</Title>
+            <Title>Search Results for {searchQuery}</Title>
             {loading ? (
                 <p>Loading...</p>
             ) : products.length > 0 ? (
